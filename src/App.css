@@ -5,6 +5,8 @@ body {
   padding: 0;
   background-color: #f8f8f8;
   color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar */
@@ -66,11 +68,16 @@ nav ul li a:hover {
 .hero-text h1 {
   font-size: 3rem;
   color: #f4ce14; /* Yellow color for the restaurant name */
+  margin:0;
 }
 
 .hero-text p {
   margin: 10px 0;
   font-size: 1.2rem;
+}
+
+.chicago {
+  margin-bottom: 4rem !important;
 }
 
 .hero-text button {
@@ -220,6 +227,7 @@ nav ul li a:hover {
 .testimonials h2{
   text-align: center;
   font-size: 2rem;
+  color: #f4ce14;
 }
 
 .testimonials h3{
@@ -229,10 +237,13 @@ nav ul li a:hover {
 }
 
 .testimonials .subcontainer{
-  margin: 0 auto 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.subcontainer{
+  margin: 0 auto 0;
   max-width: 1000px;
 }
 
@@ -243,7 +254,7 @@ nav ul li a:hover {
   border-radius: 5px;
   width: 30%;
   box-sizing: border-box;
-  box-shadow: 0 0 1rem #333;
+  box-shadow: 0 0 1.5rem #000;
 }
 
 .testimonials .nameAndImg{
@@ -271,3 +282,113 @@ nav ul li a:hover {
 }
 
 /* About */
+.about{
+  background-color: #495e57;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 4rem;
+  color: #f8f8f8;
+  box-sizing: border-box;
+}
+
+.about .subcontainer{
+  border-top: 3px solid #f4ce14;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto 0;
+  padding: 5rem 0 5rem;
+}
+
+.about h2 {
+  font-size: 3rem;
+  color: #f4ce14; /* Yellow color for the restaurant name */
+  margin:0;
+}
+
+.about p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  max-width: 750%;
+}
+
+.about .imgContainer{
+  position: relative;
+  display: flex;
+  height: calc(300px + 4rem);
+}
+
+.about .imgBack{
+  position: relative;
+  width: 200px;
+  height: 300px;
+  z-index: 2;
+  object-fit: cover;
+  top: 4rem;
+  left: 4rem;
+  border-radius: 20px;
+  box-shadow: 0 0 1.5rem #000;
+}
+
+.about .imgFront{
+  position: relative;
+  width: 200px;
+  height: 300px;
+  z-index: 3;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 1.5rem #000;
+}
+
+.about-text{
+  height: 100%;
+  align-self: center;
+  text-align: justify;
+}
+
+/* Footer */
+footer{
+  width: 100%;
+  padding: 4rem 0 4rem;
+}
+
+footer .subcontainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .subcontainer div{
+  width:fit-content;
+  max-width: 150px;
+  text-align: left;
+}
+
+footer ul{
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0;
+  gap: 1rem;
+}
+
+footer li{
+  margin-bottom: 0.5rem;
+}
+
+footer a{
+  text-decoration: none;
+  color: #495e57;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: border 0.25s;
+  border-bottom: transparent 2px solid;
+}
+
+footer a:hover{
+  border-bottom: #495e57 2px solid;
+}
+
+footer img{
+  height: 15rem;
+}

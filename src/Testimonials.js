@@ -1,7 +1,7 @@
 const Testimonials = () => {
     return (
         <section className="testimonials">
-            <h2>Testimonials</h2>
+            <h2>Our Guests' Opinion Matters</h2>
             <div className="subcontainer">
                 <div className="card-item">
                     <h3>Rating: 10/10★</h3>

@@ -4,6 +4,7 @@ import HeroSection from './HeroSection';
 import Specials from './Specials';
 import Testimonials from './Testimonials';
 import About from './About';
+import Footer from './Footer';
 import './App.css';
 
 function App() {
@@ -16,9 +17,7 @@ function App() {
         <Testimonials />
         <About />
       </main>
-      <footer>
-
-      </footer>
+      <Footer />
     </div>
   );
 }
