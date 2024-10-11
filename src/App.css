@@ -327,8 +327,9 @@ nav ul li a:hover {
   object-fit: cover;
   top: 4rem;
   left: 4rem;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 0 0 1.5rem #000;
+  border: 5px solid #f8f8f8;
 }
 
 .about .imgFront{
@@ -337,8 +338,9 @@ nav ul li a:hover {
   height: 300px;
   z-index: 3;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 0 0 1.5rem #000;
+  border: 5px solid #f8f8f8;
 }
 
 .about-text{
