@@ -134,7 +134,8 @@ nav ul li a:hover {
 .specials-grid {
   display: flex;
   justify-content: space-between;
-  margin-top: auto;
+  margin: auto 0 auto ;
+  width: 100%;
 }
 
 .special-item {
@@ -187,6 +188,14 @@ nav ul li a:hover {
   background-color: #000;
 }
 
+.fading-top{
+  display: none;
+}
+
+.fading-bottom{
+  display: none;
+}
+
 /* Online Menu Button */
 .specials .online-menu {
   background-color: #f4ce14;
@@ -213,6 +222,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 1.5rem 0;
 }
 
 /* Testimonials */
@@ -528,6 +538,7 @@ footer img{
   }
 
   .fading-top{
+    display: block !important;
     position: sticky;
     top: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Fade from opaque to transparent */
@@ -539,6 +550,7 @@ footer img{
   }
 
   .fading-bottom{
+    display: block !important;
     position: sticky;
     bottom: 0;
     background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Fade from opaque to transparent */
