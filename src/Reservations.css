@@ -1,0 +1,148 @@
+.outerContainer{
+    background-color: #495e57;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+.booking-form-container {
+    max-width: 400px; /* Adjust as needed for desktop */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Change if needed */
+    border-radius: 8px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.day-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.day-button {
+    flex: 1;
+    margin: 0 2.5px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #495e57; /* Change button color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bolder !important;
+}
+
+.day-button.selected {
+    background-color: #f4ce14; /* Darker shade when selected */
+    color: #495e57;
+    font-weight: bolder !important;
+}
+
+.day-button:hover {
+    background-color: #f4ce14; /* Darker shade for hover effect */
+    font-weight: bolder !important;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.number-display {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 80px; /* Adjust height for textarea */
+}
+
+.book-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #495e57; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: color 0.25s, background-color 0.25s;
+}
+
+.book-button:hover {
+    background-color: #f4ce14; /* Darker shade for hover effect */
+    color: #495e57;
+}
+
+@media screen and (min-width:1000px) {
+    .booking-form-container {
+        width: 1000px !important;
+        max-width: none;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="time"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    #nameGroup{
+        display: flex;
+        justify-content: space-between;
+    }
+    #nameGroup .form-group{
+        width: 49%;
+    }
+    .day-button {
+        margin: 0 2.5px;
+        padding: 10px;
+        border: none;
+        border-radius: 15px;
+        background-color: #495e57; /* Change button color */
+        color: white;
+        cursor: pointer;
+        font-weight: bolder;
+        transition: background-color 0.3s;
+    }
+    .time-frame{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .time-frame div{
+        width: 49%;
+    }
+}

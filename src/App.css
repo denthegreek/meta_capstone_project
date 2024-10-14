@@ -277,7 +277,7 @@ nav ul li a.active {
   background-color: #f8f8f8;
   color: #495e57;
   border-radius: 5px;
-  width: 30%;
+  width: 32%;
   box-sizing: border-box;
   box-shadow: 0 0 1.5rem #000;
 }
@@ -304,6 +304,7 @@ nav ul li a.active {
 .testimonials p{
   text-align: justify;
   margin: 1rem 0 0;
+  font-size: 1.05rem;
 }
 
 /* About */
@@ -463,17 +464,17 @@ footer img{
   #herocontainer{
     width: 100% !important;
     padding: 1rem 0 1rem;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .hero-text h1{
     font-size: 2.5rem;
-    text-align: center;
+    text-align: le;
   }
 
   .hero-text p {
     margin: 0;
-    text-align: center;
+    text-align: left;
   }
 
   .chicago{
@@ -481,20 +482,22 @@ footer img{
   }
 
   .hero-text {
-    width: 80%;
+    width: 65%;
+    margin-right: auto;
     max-width: none;
+    padding: 0 1rem;
   }
 
   .hero-image img {
     position: relative;
     border-radius: 8px;
     top:0;
-    height: 50vw !important;
-    width: 50vw !important;
+    height:45% !important;
+    width: 30vw !important;
     max-height:none;
     max-width: none;
     object-fit: cover;
-    padding-top: 1rem;
+    margin: 5vw;
   }
 
   .hero-text button {
